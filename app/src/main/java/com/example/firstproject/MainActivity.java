@@ -3,6 +3,9 @@ package com.example.firstproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +13,32 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        TextView infoTextView = findViewById(R.id.infoTextView);
+        switch (id) {
+            case (R.id.action_cat1):
+                infoTextView.setText("Вы выбрали кота!");
+                return true;
+            case (R.id.action_cat2):
+                infoTextView.setText("Вы выбрали кошку!");
+                return true;
+            case (R.id.action_cat3):
+                infoTextView.setText("Вы выбрали котёнка!");
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+
     }
 }
