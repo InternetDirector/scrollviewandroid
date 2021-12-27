@@ -16,13 +16,42 @@
             android:layout_height="wrap_content"
             android:text="Hello World!" />
         <Button
+            android:id="@+id/manyButtonsAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Много кнопок" />
+        <Button
+            android:id="@+id/closeApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Закрыть приложение" />
+        <Button
             android:id="@+id/account_b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:text="Добавить аккаунт" />
-
+        <ImageButton
+            android:id="@+id/witcherBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/witcher" />
+        <ImageButton
+            android:id="@+id/flutterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/flutter" />
+        <ImageButton
+            android:id="@+id/screenShotBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/screenshot" />
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
